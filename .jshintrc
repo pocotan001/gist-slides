@@ -1,0 +1,34 @@
+{
+  "globals": {
+    "chrome": true,
+    "$": true,
+    "jQuery": true,
+    "templates": true,
+    "configs": true,
+    "app": true,
+
+    "Reveal": true,
+    "bespoke": true
+  },
+
+  "immed": true,
+  "noarg": true,
+  "noempty": true,
+  "quotmark": "single",
+  "undef": true,
+  "trailing": true,
+
+  "boss": true,
+  "debug": true,
+  "eqnull": true,
+  "evil": true,
+  "expr": true,
+  "multistr": true,
+  "scripturl": true,
+  "sub": true,
+  "supernew": true,
+
+  "browser": true,
+  "devel": true,
+  "jquery": true
+}

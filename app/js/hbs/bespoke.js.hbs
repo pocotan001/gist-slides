@@ -1,0 +1,9 @@
+<article>
+    <section>{{{header}}}</section>
+    {{#each items}}
+        <section>{{{body}}}</section>
+        {{#each children}}
+            <section>{{{body}}}</section>
+        {{/each}}
+    {{/each}}
+</article>

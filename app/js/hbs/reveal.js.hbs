@@ -1,0 +1,17 @@
+<div class="reveal">
+    <div class="slides">
+        <section>{{{header}}}</section>
+        {{#each items}}
+            {{#if children}}
+                <section>
+                    <section>{{{body}}}</section>
+                    {{#each children}}
+                        <section>{{{body}}}</section>
+                    {{/each}}
+                </section>
+            {{else}}
+                <section>{{{body}}}</section>
+            {{/if}}
+        {{/each}}
+    </div>
+</div>

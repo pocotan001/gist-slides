@@ -1,0 +1,7 @@
+<header class="caption">{{{header}}}</header>
+{{#each items}}
+    <section class="slide"><div>{{{body}}}</div></section>
+    {{#each children}}
+        <section class="slide"><div>{{{body}}}</div></section>
+    {{/each}}
+{{/each}}

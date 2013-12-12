@@ -1,0 +1,43 @@
+{
+    "name": "Gist Slides",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Instant presentation from Gist",
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "web_accessible_resources": [
+        "/framework/*"
+    ],
+    "icons": {
+        "16": "img/icon-16.png",
+        "128": "img/icon-128.png"
+    },
+    "background": {
+        "scripts": [
+            "/js/background.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "/img/icon-19.png",
+            "38": "/img/icon-38.png"
+        },
+        "default_title": "Gist Slides",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://gist.github.com/*"
+        ],
+        "js": [
+            "/dist/vendor.js",
+            "/dist/templates.js",
+            "/js/configs.js",
+            "/js/content.js"
+        ]
+    }],
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}

@@ -1,0 +1,9 @@
+[submodule "app/framework/reveal.js"]
+	path = app/framework/reveal.js
+	url = git@github.com:hakimel/reveal.js.git
+[submodule "app/framework/shower"]
+	path = app/framework/shower
+	url = git@github.com:shower/shower.git
+[submodule "app/framework/bespoke.js"]
+	path = app/framework/bespoke.js
+	url = git@github.com:markdalgleish/bespoke.js.git

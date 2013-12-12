@@ -1,0 +1,40 @@
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 100%;
+}
+body {
+    color: #777;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.icon-globe {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAwElEQVR42nWSSxEEIQxEkYAEJCAhErhwR8I6QMJIGAkjYSSMBCQgYTZbld5KdcHhXRK68yPUWldERRxhBQeScikvMZVDiTtxs0en0pViguFMHiWzOFuyURfTBDCBQfTi29pdjdFRAAaI/asaBUKG2h8Qf1xQNpt/FktMv2SnhSQSI8+IrwxOq3bBcCPOPDM4lAaDzd0DL4PpyjST6eNeLEgwdMJhxNUPexmLJ1TnHwYw/83z0SIDi5mkFLuEQMR8Ad8qS9A37XUnAAAAAElFTkSuQmCC");
+}
+
+.menu {
+    list-style: none;
+    margin: 5px;
+    border-radius: 2px;
+    white-space: nowrap;
+    background-color: #f6f6f6;
+}
+.menu > li {
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+}
+.menu > li:hover {
+    background-color: #efefef;
+    color: #444;
+}
+.menu .icon-globe {
+    position: absolute;
+    right: 0;
+}
