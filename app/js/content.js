@@ -88,17 +88,17 @@ var app = {
         });
 
         $.when.apply(null, defers).done(function() {
-            var scripts;
+            var code;
 
             if (typeof arguments[0] === 'string') {
-                scripts = arguments[0];
+                code = arguments[0];
             } else {
-                scripts = ([].slice.call(arguments)).map(function(argument) {
+                code = ([].slice.call(arguments)).map(function(argument) {
                     return argument[0];
                 }).join('');
             }
 
-            callback(eval.bind(null, scripts));
+            callback(eval.bind(null, code));
         });
     },
 
